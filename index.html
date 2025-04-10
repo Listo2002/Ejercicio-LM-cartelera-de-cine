@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="autor" content="Javier">
+<title>Cine la Estrella</title>
+</head>
+
+<body background="./images/wallpaper.webp">
+<table width="80%">
+
+<tr>
+<td>
+<img src="./images/logolaestrella.webp" alt="logo de cine" width="100"</img>
+</td>
+<td align="center"> 
+<h1>CINES LA ESTRELLA</h1>
+<p><i>Donde la ficción se hace realidad</i></p>
+</td>
+</tr>
+</table>
+
+<a href="cartelera.html" title="Nuestra cartelera" target="_self">NUESTRA CARTELERA</a>
+    <form method="post" action="recibido.html" target="_blank" style="width: 20%;">
+        <fieldset>
+            <legend>Comprar en entradas</legend>
+            <table>
+			    <tr>
+					<td>
+					<label for="pelicula" >Seleccione la pelicula:</label>
+					<select name="pelicula" id="pelicula">
+					<option value="harry">Harry Potter y la piedra filosofal</option>
+				    <option value="spider">Spider-man: Homecoming</option>
+					<option value="batman">Batman el caballero oscuro</option>
+					</select>
+					</td>
+                </tr>
+                <td>
+                    <label>Horario:</label><br>
+                    <input type="radio" name="horario" id="hora1" value="1600" checked="checked"><label for="hora1">16:00</label>
+				    <input type="radio" name="horario" id="hora2" value="1830" ><label for="hora2">18:30</label>
+                    <input type="radio" name="horario" id="hora3" value="2100" ><label for="hora3">21:00</label>
+                </td>
+				<tr>
+                    <td>
+					<label for="entradas" >Nº entradas(*):</label><br>
+                    <input type="number" name="entrada" id="entradas">
+					</td>
+                </tr>
+                <tr>
+                    <td>
+					<label for="fecha" >Fecha(*:</label><br>
+                    <input type="date" name="fecha" id="fecha" required="required">
+					</td>
+                </tr>
+               <tr>
+			   <td colspan="2">
+			   <label>Alimentos y bebidas</label><br>
+			   <input type="checkbox" name="opciones" id="palomitas" value="palomitas"><label for="palomitas">Palomitas</label>
+			   <input type="checkbox" name="opciones" id="refresco" value="refresco" ><label for="refresco">Refresco</label>
+               <input type="checkbox" name="opciones" id="caramelos" value="caramelos" ><label for="caramelos">Caramelos</label>
+			   
+			   </td>  
+			   </tr>
+               </fieldset>
+                <tr>
+                    <td><input type="submit" id="submit" value="Enviar datos"></td>
+                    <td><input type="reset" id="reset" value="Borrar datos"></td>
+                </tr>
+                <tr>
+                    <td colspan="2"></td>
+                </tr>
+           </table>
+        
+    </form>
+
+
+
+
+
+</body>
+</html>
